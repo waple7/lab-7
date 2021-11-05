@@ -17,6 +17,13 @@ struct Triangle {
 
 };
 
+struct Triangle triangle = {
+        .point_1={0, 0},
+        .point_2={0, 10},
+        .point_3={10, 0}
+
+};
+
 struct Card_reader { //объединение
     unsigned included: 1;
     unsigned sd_card: 1;
@@ -35,12 +42,6 @@ int main() {
     enum music value;
     value = rock;
     printf("number: %d\n", rock + 1); // 3 по счету
-    struct Triangle triangle = {
-            .point_1={0, 0},
-            .point_2={0, 10},
-            .point_3={10, 0}
-
-    };
     int square;
     square=(triangle.point_2[1] * triangle.point_3[0]) / 2;
     printf("square triangle: %d\n", square); // площадь треугольника
