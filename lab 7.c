@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-enum music { // перечисление
+enum music { 
     classics,
     pop,
     rock,
@@ -32,8 +32,8 @@ struct Card_reader { //объединение
 
 };
 
-union unity {   // объединение исп одно и то же расположение памяти.размер объедин равен размеру нибольшь члена
-    struct Card_reader comprise; //вкл
+union unity {   
+    struct Card_reader comprise; 
     int write;
 
 };
@@ -41,10 +41,10 @@ union unity {   // объединение исп одно и то же расп�
 int main() {
     enum music value;
     value = rock;
-    printf("number: %d\n", rock + 1); // 3 по счету
+    printf("number: %d\n", rock + 1); 
     int square;
     square=(triangle.point_2[1] * triangle.point_3[0]) / 2;
-    printf("square triangle: %d\n", square); // площадь треугольника
+    printf("square triangle: %d\n", square); 
 
 
     union unity arg;
